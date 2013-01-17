@@ -1,10 +1,8 @@
-class ApplicationController < ActionController::Base
-  protect_from_forgery
-  include SessionsHelper
+class SessionsController < ApplicationController
   def new
-    @title = "Sign in"
+  	render 'new'
   end
-
+  
   def create
     user = User.authenticate(params[:session][:email],
                              params[:session][:password])
@@ -22,4 +20,5 @@ class ApplicationController < ActionController::Base
     sign_out
     redirect_to root_path
   end
+
 end
