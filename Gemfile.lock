@@ -43,6 +43,8 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    faker (1.1.2)
+      i18n (~> 0.5)
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
@@ -117,6 +119,7 @@ GEM
       nokogiri (>= 1.2.0)
       rack (>= 1.0)
       rack-test (>= 0.5.3)
+    will_paginate (3.0.4)
 
 PLATFORMS
   x86-mingw32
@@ -124,6 +127,7 @@ PLATFORMS
 DEPENDENCIES
   annotate
   coffee-rails (~> 3.2.1)
+  faker
   jquery-rails
   rails (= 3.2.1)
   rspec-rails
@@ -131,3 +135,4 @@ DEPENDENCIES
   sqlite3
   uglifier (>= 1.0.3)
   webrat
+  will_paginate
